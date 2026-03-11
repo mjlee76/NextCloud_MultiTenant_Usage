@@ -80,6 +80,48 @@ cd NextCloud_MultiTenant_Usage
 
 ---
 
+# Nextcloud 설치
+
+본 프로젝트는 Docker Compose를 이용해 로컬 환경에서 Nextcloud를 실행합니다.
+
+## 1. Docker 및 Docker Compose 확인
+
+다음 명령어로 Docker가 설치되어 있는지 확인합니다.
+
+```bash
+docker --version
+docker compose version
+```
+
+Docker가 설치되어 있지 않다면 아래 공식 문서를 참고하여 설치합니다.
+
+https://docs.docker.com/get-docker/
+
+## 2. Nextcloud 환경 변수 파일 생성
+
+```bash
+cp nextcloud/.env.example nextcloud/.env
+```
+
+## 3. Nextcloud 컨테이너 실행
+
+```bash
+cd nextcloud
+docker compose up -d
+```
+
+실행이 완료되면 Nextcloud 서버가 로컬에서 실행됩니다.
+
+브라우저에서 다음 주소로 접속합니다.
+
+```text
+http://localhost:8080
+```
+
+이후 관리자 계정을 생성하거나 `.env`에 설정된 관리자 계정으로 로그인할 수 있습니다.
+
+---
+
 # Nextcloud 설정
 
 ## 1. 환경 변수 파일 생성
