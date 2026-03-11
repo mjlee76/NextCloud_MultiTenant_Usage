@@ -20,7 +20,8 @@ Frontend에서는 이를 시각적으로 표시합니다.
 ---
 
 # 시스템 아키텍처
- 
+
+```bash
 React Frontend
 ⬇
 Node.js Backend (Express)
@@ -28,6 +29,7 @@ Node.js Backend (Express)
 Nextcloud OCS API
 ⬇
 Nextcloud Storage
+```
 
 ---
 
@@ -45,6 +47,7 @@ Nextcloud Storage
 
 # 프로젝트 구조
 
+```bash
 NextCloud_MultiTenant_Usage
 
 ├ backend
@@ -62,6 +65,7 @@ NextCloud_MultiTenant_Usage
 
 ├ .gitignore
 └ README.md
+```
 
 ---
 
@@ -176,6 +180,7 @@ cp backend/.env.example backend/.env
 
 `.env` 예시
 
+```bash
 NEXTCLOUD_BASE_URL=http://localhost:8080
 NEXTCLOUD_USERNAME=admin
 NEXTCLOUD_APP_PASSWORD=your-nextcloud-app-password
@@ -183,6 +188,7 @@ NEXTCLOUD_APP_PASSWORD=your-nextcloud-app-password
 NEXTCLOUD_TENANT_GROUP_PREFIX=
 
 PORT=3000
+```
 
 ---
 
