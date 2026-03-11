@@ -283,7 +283,6 @@ Frontend
 
 - React
 - Axios
-- TailwindCSS
 
 Backend
 
